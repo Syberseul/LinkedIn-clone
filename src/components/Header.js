@@ -28,6 +28,10 @@ function Header() {
         <HeaderOption Icon={BusinessCenterIcon} title="Jobs" />
         <HeaderOption Icon={ChatIcon} title="Messaging" />
         <HeaderOption Icon={NotificationsIcon} title="Notification" />
+        <HeaderOption
+          avatar="https://media-exp1.licdn.com/dms/image/D5635AQH2rPSmF5mILA/profile-framedphoto-shrink_100_100/0/1626063680389?e=1628913600&v=beta&t=sj4QG86HjzILaG307ZsTQG5jXy7iMvAyLu5uX-Qyjk8"
+          title="Me"
+        />
       </div>
     </div>
   );
