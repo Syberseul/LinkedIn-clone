@@ -19,7 +19,10 @@ function Sidebar() {
           src="https://i.pinimg.com/originals/ca/45/b8/ca45b8e64347b04ae81ed77cd0442f50.jpg"
           alt="sidebar background image"
         />
-        <Avatar className="sidebar__avatar" />
+        <Avatar
+          className="sidebar__avatar"
+          src={`https://media-exp1.licdn.com/dms/image/D5635AQH2rPSmF5mILA/profile-framedphoto-shrink_100_100/0/1626063680389?e=1628913600&v=beta&t=sj4QG86HjzILaG307ZsTQG5jXy7iMvAyLu5uX-Qyjk8`}
+        />
         <h2>Yiteng Huang</h2>
         <h4>yteng.huang@gmail.com</h4>
       </div>
