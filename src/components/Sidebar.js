@@ -17,7 +17,7 @@ function Sidebar() {
       <div className="sidebar__top">
         <img
           src="https://i.pinimg.com/originals/ca/45/b8/ca45b8e64347b04ae81ed77cd0442f50.jpg"
-          alt="sidebar background image"
+          alt="sidebar background"
         />
         <Avatar
           className="sidebar__avatar"
