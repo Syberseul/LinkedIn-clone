@@ -9,7 +9,7 @@ import {
 } from "@material-ui/icons";
 import "./Feed.css";
 import Post from "./Post";
-import { db } from "../firebase";
+import { db } from "../server/firebase";
 import firebase from "firebase";
 
 function Feed() {
