@@ -44,7 +44,12 @@
   font-size: 14px;
 }
 
-.widgets__articleRight > p {
-  font-size: 12px;
+.widgets__articleRight > a {
+  font-size: 14px;
   color: gray;
+  text-decoration: none;
+}
+
+.widgets__articleRight > a:hover {
+  text-decoration: underline;
 }

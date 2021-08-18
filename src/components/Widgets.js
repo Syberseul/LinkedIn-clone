@@ -3,14 +3,16 @@ import "./Widgets.css";
 import { Info, FiberManualRecord } from "@material-ui/icons";
 
 function Widgets() {
-  const newArticle = (heading, subtitle) => (
+  const newArticle = (heading, subtitle, shortName) => (
     <div className="widgets__article">
       <div className="widgets__articleLeft">
         <FiberManualRecord />
       </div>
       <div className="widgets__articleRight">
         <h4>{heading}</h4>
-        <p>{subtitle}</p>
+        <a href={subtitle} target="_blank">
+          {shortName}
+        </a>
       </div>
     </div>
   );
@@ -23,14 +25,24 @@ function Widgets() {
       </div>
 
       {newArticle(
-        "This is the first article",
-        "See what's going on via my Github page"
+        "Netflix Clone is Live",
+        "https://netflix-clone-yiteng.web.app/",
+        "Redirect Link"
       )}
 
       {newArticle(
-        "I also have other clone websites",
-        "Go and check my Github page"
+        "GitHub Page",
+        "https://github.com/Syberseul",
+        "Go to my Github"
       )}
+
+      {newArticle(
+        "LinkedIn Page",
+        "https://www.linkedin.com/in/yiteng-huang-front-end-developer/",
+        "Go to my LinkedIn"
+      )}
+
+      {newArticle("More Live pages coming soon...")}
     </div>
   );
 }
