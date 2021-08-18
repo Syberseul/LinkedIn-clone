@@ -11,8 +11,12 @@ import "./Feed.css";
 import Post from "./Post";
 import { db } from "../server/firebase";
 import firebase from "firebase";
+import { useSelector } from "react-redux";
+import { selectUser } from "../features/userSlice";
 
 function Feed() {
+  const user = useSelector(selectUser);
+
   const [input, setInput] = useState("");
   const [posts, setPosts] = useState([]);
 
@@ -32,10 +36,10 @@ function Feed() {
   const sendPost = (e) => {
     e.preventDefault();
     db.collection("posts").add({
-      name: "Yiteng",
-      description: "this is a test",
+      name: user.displayName,
+      description: user.email,
       message: input,
-      photoUrl: "",
+      photoUrl: user.photoUrl || "",
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
     setInput("");
@@ -45,10 +49,9 @@ function Feed() {
     <div className="feed">
       <div className="feed__inputContainer">
         <div className="feed__inputSearch">
-          <Avatar
-            className="feed__icon"
-            src={`https://media-exp1.licdn.com/dms/image/D5635AQH2rPSmF5mILA/profile-framedphoto-shrink_100_100/0/1626063680389?e=1628913600&v=beta&t=sj4QG86HjzILaG307ZsTQG5jXy7iMvAyLu5uX-Qyjk8`}
-          />
+          <Avatar className="feed__icon" src={user.photoUrl}>
+            {user.displayName[0]}
+          </Avatar>
           <div className="feed__input">
             <form>
               <input
