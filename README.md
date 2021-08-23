@@ -52,9 +52,18 @@ This section is about tips to help you play with this demo on your own device ðŸ
 ## <a id="demo"> Demo: </a>
   - Login and Create Account:
   
+https://user-images.githubusercontent.com/32564367/130381120-a3408aae-063b-4865-9b48-adc6097581c8.mp4
+
+  
   - Post feed and stored in firebase database:
   
+https://user-images.githubusercontent.com/32564367/130381138-c3c888df-83a7-4d5a-9154-d88935202f7d.mp4
+
+
   - Public access of feeds to all users:
+  
+https://user-images.githubusercontent.com/32564367/130381199-0826b7f2-d2d7-44c0-9137-96c58f343ff7.mp4
+
   
 ## <a id="contact"> Contact Email: </a>
   yteng.huang@gmail.com
