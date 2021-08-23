@@ -1,4 +1,4 @@
-# <p align="center"> <a href="https://netflix-clone-yiteng.web.app/"> LinkedIn Clone </a>(Official Website: https://www.linkedin.com)
+# <p align="center"> <a href="https://linkedin-clone-yiteng.web.app/" target="_blank"> LinkedIn Clone </a>(Official Website: https://www.linkedin.com)
   
 ## Table of Contents
 - <a href="#about"> About the Project </a>
