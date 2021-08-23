@@ -50,8 +50,8 @@ function Feed() {
     <div className="feed">
       <div className="feed__inputContainer">
         <div className="feed__inputSearch">
-          <Avatar className="feed__icon" src={user.photoUrl}>
-            {user.displayName[0]}
+          <Avatar className="feed__icon" src={user?.photoUrl}>
+            {user?.email[0]}
           </Avatar>
           <div className="feed__input">
             <form>

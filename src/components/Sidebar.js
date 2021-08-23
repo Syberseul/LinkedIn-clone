@@ -23,8 +23,8 @@ function Sidebar() {
           src="https://i.pinimg.com/originals/ca/45/b8/ca45b8e64347b04ae81ed77cd0442f50.jpg"
           alt="sidebar background"
         />
-        <Avatar className="sidebar__avatar" src={user.photoUrl}>
-          {user.displayName[0]}
+        <Avatar className="sidebar__avatar" src={user?.photoUrl}>
+          {user?.email[0]}
         </Avatar>
         <h2>{user.displayName}</h2>
         <h4>{user.email}</h4>
