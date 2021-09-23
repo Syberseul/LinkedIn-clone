@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Popup.css";
 
 function Popup() {
@@ -14,18 +14,18 @@ function Popup() {
           <p className="popup_title">Instruction:</p>
           <ul className="popup_list">
             <li className="popup_listItem">
-              This is the demo version of Netflix Clone
+              This is the demo version of LinkedIn Clone
             </li>
             <li className="popup_listItem">
               First you need to create an account to browse the main content
             </li>
             <li className="popup_listItem">
-              Once You've done the registration, feel free to click any movie
-              image and see details about that
+              After log in your account, feel free to sent a post via top text
+              field says: "Start a post"
             </li>
             <li className="popup_listItem">
-              Click the thumbnail on top right corner and try to subscribe
-              different plans - fake payment process implemented
+              This is connected to a run-time server, which means you could see
+              others post as well
             </li>
           </ul>
           <button className="popup_btn" onClick={() => handleCloseBtn()}>

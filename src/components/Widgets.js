@@ -23,10 +23,21 @@ function Widgets() {
         <h2>Author's News</h2>
         <Info />
       </div>
+      {newArticle(
+        "Airbnb Clone is Live",
+        "https://airbnb-clone-syberseul.vercel.app/",
+        "Redirect Link"
+      )}
 
       {newArticle(
         "Netflix Clone is Live",
         "https://netflix-clone-yiteng.web.app/",
+        "Redirect Link"
+      )}
+
+      {newArticle(
+        "JB HiFi Clone is Live",
+        "https://jb-hifi-clone-yiteng.web.app/",
         "Redirect Link"
       )}
 
