@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { login } from "../features/userSlice";
 import { auth } from "../server/firebase";
+import logo from "../img/Logo.png";
+import Popup from "../components/Popup";
 import "./Login.css";
 
 function Login() {
@@ -57,45 +59,45 @@ function Login() {
   };
 
   return (
-    <div className="login">
-      <img
-        src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c528.png"
-        alt="LinkedIn"
-      />
-      <form>
-        <input
-          type="text"
-          placeholder="Full name (required if registering)"
-          value={name}
-          onChange={({ target }) => setName(target.value)}
-        />
-        <input
-          type="text"
-          placeholder="Profile picture URL (optional)"
-          value={profilePic}
-          onChange={({ target }) => setProfilePic(target.value)}
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={({ target }) => setEmail(target.value)}
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={({ target }) => setPassword(target.value)}
-        />
-        <button onClick={loginToApp}>Sign In</button>
-        <p>
-          Not a member?{" "}
-          <span className="login__register" onClick={register}>
-            Register Now
-          </span>
-        </p>
-      </form>
-    </div>
+    <>
+      <Popup />
+      <div className="login">
+        <img src={logo} alt="LinkedIn" />
+        <form>
+          <input
+            type="text"
+            placeholder="Full name (required if registering)"
+            value={name}
+            onChange={({ target }) => setName(target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Profile picture URL (optional)"
+            value={profilePic}
+            onChange={({ target }) => setProfilePic(target.value)}
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={({ target }) => setEmail(target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={({ target }) => setPassword(target.value)}
+          />
+          <button onClick={loginToApp}>Sign In</button>
+          <p>
+            Not a member?{" "}
+            <span className="login__register" onClick={register}>
+              Register Now
+            </span>
+          </p>
+        </form>
+      </div>
+    </>
   );
 }
 

@@ -1,0 +1,44 @@
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+.popup_container {
+  background: rgba(236, 236, 236, 0.9);
+  position: absolute;
+  height: 400px;
+  width: 400px;
+}
+
+.popup_title {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.popup_list {
+  margin-right: 1rem;
+}
+
+.popup_listItem {
+  padding: 0.5rem;
+  font-weight: 600;
+}
+
+.popup_btn {
+  margin-top: 1rem;
+  margin-left: 30%;
+  width: 10rem;
+  height: 3rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  outline: none;
+}

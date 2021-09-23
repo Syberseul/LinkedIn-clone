@@ -10,6 +10,7 @@ import NotificationsIcon from "@material-ui/icons/Notifications";
 import { logout } from "../features/userSlice";
 import { auth } from "../server/firebase";
 import { useDispatch } from "react-redux";
+import iconImg from "../img/icon.png";
 
 function Header() {
   const dispatch = useDispatch();
@@ -22,10 +23,7 @@ function Header() {
   return (
     <div className="header">
       <div className="header__left">
-        <img
-          src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg"
-          alt="LinkedIn Icon"
-        />
+        <img src={iconImg} alt="LinkedIn Icon" />
         <div className="header__search">
           <SearchIcon />
           <input type="text" placeholder="Search" />
